@@ -1,0 +1,291 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<style>
+    #box {
+        height: 200px;
+        width: 900px;
+    }
+    body {
+        background-color: black;
+    }
+    .flag {
+        height: 600px;
+        width: 900px;
+        border: 5px solid white;
+    }
+    .top {
+        background-color: #FF7722;
+    }
+    .mid{
+        background-color: white;
+    }
+    .bot{
+        position: fixed;
+        top: 413px;
+        left: 13px;
+        background-color: #046A38;
+    }
+    .outcir{
+        position: relative;
+        background-color: white;
+        border: 10px solid #06038D;
+        height: 170px;
+        width: 170px;
+        top: 5px;
+        left: 350px;
+        border-radius: 50%;
+    }
+    .inrcir {
+        background-color: #06038D;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+        position: relative;
+        top: 70px;
+        left: 70px;
+    }
+    .line {
+        background-color: #06038D;
+        height: 60px;
+        width: 5px;
+        border-radius: 100%;
+        position: relative;
+        left: 97px;
+        top: 20px;
+    }
+    .lb {
+        position: fixed;
+        top: 213px;
+        left: 358px;
+        height: 200px;
+        width:  200px;
+    }
+    .semi {
+        position: absolute;
+        top: 90%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 6.75px;
+        width: 15px;
+        border-radius: 150px 150px 0 0;
+        background-color: #06038D;
+    }
+    .sb {
+        position: fixed;
+        top: 210px;
+        left: 355px;
+        height: 206px;
+        width:  206px;
+    }
+    #a1 {
+        transform: rotate(15deg);
+    }
+    #a2 {
+        transform: rotate(30deg);
+    }
+    #a3 {
+        transform: rotate(45deg);
+    }
+    #a4 {
+        transform: rotate(60deg);
+    }
+    #a5 {
+        transform: rotate(75deg);
+    }
+    #a6 {
+        transform: rotate(90deg);
+    }
+    #a7 {
+        transform: rotate(105deg);
+    }
+    #a8 {
+        transform: rotate(120deg);
+    }
+    #a9 {
+        transform: rotate(135deg);
+    }
+    #a10 {
+        transform: rotate(150deg);
+    }
+    #a11 {
+        transform: rotate(165deg);
+    }
+    #a12 {
+        transform: rotate(180deg);
+    }
+    #a13 {
+        transform: rotate(195deg);
+    }
+    #a14 {
+        transform: rotate(210deg);
+    }
+    #a15 {
+        transform: rotate(225deg);
+    }
+    #a16 {
+        transform: rotate(240deg);
+    }
+    #a17 {
+        transform: rotate(255deg);
+    }
+    #a18 {
+        transform: rotate(270deg);
+    }
+    #a19 {
+        transform: rotate(285deg);
+    }
+    #a20 {
+        transform: rotate(300deg);
+    }
+    #a21 {
+        transform: rotate(315deg);
+    }
+    #a22 {
+        transform: rotate(330deg);
+    }
+    #a23 {
+        transform: rotate(345deg);
+    }
+    #a24 {
+        transform: rotate(360deg);
+    }
+    #b1 {
+        transform: rotate(7.5deg);
+    }
+    #b2 {
+        transform: rotate(22.5deg);
+    }
+    #b3 {
+        transform: rotate(37.5deg);
+    }
+    #b4 {
+        transform: rotate(52.5deg);
+    }
+    #b5 {
+        transform: rotate(67.6deg);
+    }
+    #b6 {
+        transform: rotate(82.5deg);
+    }
+    #b7 {
+        transform: rotate(97.5deg);
+    }
+    #b8 {
+        transform: rotate(112.5deg);
+    }
+    #b9 {
+        transform: rotate(127.5deg);
+    }
+    #b10 {
+        transform: rotate(142.5deg);
+    }
+    #b11 {
+        transform: rotate(157.5deg);
+    }
+    #b12 {
+        transform: rotate(172.5deg);
+    }
+    #b13 {
+        transform: rotate(187.5deg);
+    }
+    #b14 {
+        transform: rotate(202.5deg);
+    }
+    #b15 {
+        transform: rotate(217.5deg);
+    }
+    #b16 {
+        transform: rotate(232.5deg);
+    }
+    #b17 {
+        transform: rotate(247.5deg);
+    }
+    #b18 {
+        transform: rotate(262.5deg);
+    }
+    #b19 {
+        transform: rotate(277.5deg);
+    }
+    #b20 {
+        transform: rotate(292.5deg);
+    }
+    #b21 {
+        transform: rotate(307.5deg);
+    }
+    #b22 {
+        transform: rotate(322.5deg);
+    }
+    #b23 {
+        transform: rotate(337.5deg);
+    }
+    #b24 {
+        transform: rotate(-7.5deg);
+    }
+</style>
+
+<body>
+    <div class="flag">
+        <div class="top" id="box"></div>
+        <div class="mid" id="box">
+        <div class="bot" id="box"></div>
+            <div class="outcir">
+                <div class="inrcir"></div>
+                <div class="lb"  id="a1"><div class="line"> </div></div>
+                <div class="lb"  id="a2"><div class="line"> </div></div>
+                <div class="lb"  id="a3"><div class="line"> </div></div>
+                <div class="lb"  id="a4"><div class="line"> </div></div>
+                <div class="lb"  id="a5"><div class="line"> </div></div>
+                <div class="lb"  id="a6"><div class="line"> </div></div>
+                <div class="lb"  id="a7"><div class="line"> </div></div>
+                <div class="lb"  id="a8"><div class="line"> </div></div>
+                <div class="lb"  id="a9"><div class="line"> </div></div>
+                <div class="lb" id="a10"><div class="line"> </div></div>
+                <div class="lb" id="a11"><div class="line"> </div></div>
+                <div class="lb" id="a12"><div class="line"> </div></div>
+                <div class="lb" id="a13"><div class="line"> </div></div>
+                <div class="lb" id="a14"><div class="line"> </div></div>
+                <div class="lb" id="a15"><div class="line"> </div></div>
+                <div class="lb" id="a16"><div class="line"> </div></div>
+                <div class="lb" id="a17"><div class="line"> </div></div>
+                <div class="lb" id="a18"><div class="line"> </div></div>
+                <div class="lb" id="a19"><div class="line"> </div></div>
+                <div class="lb" id="a20"><div class="line"> </div></div>
+                <div class="lb" id="a21"><div class="line"> </div></div>
+                <div class="lb" id="a22"><div class="line"> </div></div>
+                <div class="lb" id="a23"><div class="line"> </div></div>
+                <div class="lb" id="a24"><div class="line"> </div></div>
+
+                <div class="sb"  id="b1"><div class="semi"> </div></div>
+                <div class="sb"  id="b2"><div class="semi"> </div></div>
+                <div class="sb"  id="b3"><div class="semi"> </div></div>
+                <div class="sb"  id="b4"><div class="semi"> </div></div>
+                <div class="sb"  id="b5"><div class="semi"> </div></div>
+                <div class="sb"  id="b6"><div class="semi"> </div></div>
+                <div class="sb"  id="b7"><div class="semi"> </div></div>
+                <div class="sb"  id="b8"><div class="semi"> </div></div>
+                <div class="sb"  id="b9"><div class="semi"> </div></div>
+                <div class="sb" id="b10"><div class="semi"> </div></div>
+                <div class="sb" id="b11"><div class="semi"> </div></div>
+                <div class="sb" id="b12"><div class="semi"> </div></div>
+                <div class="sb" id="b13"><div class="semi"> </div></div>
+                <div class="sb" id="b14"><div class="semi"> </div></div>
+                <div class="sb" id="b15"><div class="semi"> </div></div>
+                <div class="sb" id="b16"><div class="semi"> </div></div>
+                <div class="sb" id="b17"><div class="semi"> </div></div>
+                <div class="sb" id="b18"><div class="semi"> </div></div>
+                <div class="sb" id="b19"><div class="semi"> </div></div>
+                <div class="sb" id="b20"><div class="semi"> </div></div>
+                <div class="sb" id="b21"><div class="semi"> </div></div>
+                <div class="sb" id="b22"><div class="semi"> </div></div>
+                <div class="sb" id="b23"><div class="semi"> </div></div>
+                <div class="sb" id="b24"><div class="semi"> </div></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
